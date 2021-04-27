@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+// import Demo_useRef from './components/Demo_useRef'
+import Demo_useState from './components/Demo_useState'
+// import Demo_useEffect from './components/Demo_useEffect'
+// import Fetch_Data from './components/Fetch_Data'
+// import Unmount_toggle from './components/Unmount_toggle'
+// import Demo_createContext from './components/Demo_createContext'
+
+
+// export const UserCount = React.createContext()
 
 function App() {
+  const [count, setCount] = useState(0)
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello Counter App</h1>
+      <Demo_useState />
     </div>
   );
 }
